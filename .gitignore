@@ -1,4 +1,7 @@
 _site
 .sass-cache
 node_modules
+
+*.lock
 Gemfile.lock
+feed.xml
