@@ -7,7 +7,6 @@ module Jekyll
     def render(context)
       content = super
       content = content.split(/\r?\n/)
-      puts content.inspect
 
       minTabs = 9999
       for line in content
