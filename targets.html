@@ -3,52 +3,67 @@ layout: default
 title: Targets
 ---
 <div class="container">
-{% markdown %}
-# {{page.title}}
+  <div class="row">
+    <div class="col-sm-9">
+      {% markdown %}
+      # {{page.title}}
 
-> A `target` is a specific theme at a specific shop.
+      After executing `quickshot configure` you will be presented with the following menu:
 
-After executing `quickshot configure` you will be presented with the following menu:
+      ```
+      ? Main Menu: (Use arrow keys)
+      ❯ Configure targets
+        Configure sass
+        Configure ignore file
+        Save configuration and exit
+      ```
 
-```
-? Main Menu: (Use arrow keys)
-❯ Configure targets
-  Configure sass
-  Configure ignore file
-  Save configuration and exit
-```
+      To configure your targets select "Configure targets" using your arrow keys and press enter. You will then see the following menu.
 
-To configure your targets select "Configure targets" using your arrow keys and press enter. You will then see the following menu.
+      ```
+      ? Manage Targets: (Use arrow keys)
+      ❯ Create Target
+        Edit Target
+        Delete Target
+        List Targets
+        Done Managing Targets
+      ```
 
-```
-? Manage Targets: (Use arrow keys)
-❯ Create Target
-  Edit Target
-  Delete Target
-  List Targets
-  Done Managing Targets
-```
+      Select `Create Target` from the menu using the arrow keys.
 
-Select `Create Target` from the menu using the arrow keys.
+      You will then be asked for all of the following information:
 
-You will then be asked for all of the following information:
+      - **Target Name** *Staging, Development or whatever you wish*
+      - **API Key** *Copied from the private app settings page on Shopify*
+      - **Password** *Copied from the private app settings page on Shopify*
+      - **Store URL** *URL to the shopify store you want to connect to*
+      - **Theme** *quickshot will display all the available themes from your shop, use your arrow keys to select which one you want to connect to*
 
-- **Target Name** *Staging, Development or whatever you wish*
-- **API Key** *Copied from the private app settings page on Shopify*
-- **Password** *Copied from the private app settings page on Shopify*
-- **Store URL** *URL to the shopify store you want to connect to*
-- **Theme** *quickshot will display all the available themes from your shop, use your arrow keys to select which one you want to connect to*
+      #### Getting Private App Credentials
 
-#### Getting Private App Credentials
+      Go to **your-store.myshopify.com**/admin/apps/private in your web browser. Click on “Create a Private App” to generate the credentials for a new app. You will need the API Key and Password of this newly generated app:
 
-Go to **your-store.myshopify.com**/admin/apps/private in your web browser. Click on “Create a Private App” to generate the credentials for a new app. You will need the API Key and Password of this newly generated app:
+      ![api-key-and-password](images/API-key-and-password.jpg)
 
-![api-key-and-password](images/API-key-and-password.jpg)
+      *Special Thanks to Shopify for letting me use some of their documentation*
 
-*Special Thanks to Shopify for letting me use some of their documentation*
+      After configuring a target, you are returned to the `Manage Targets` menu. From there you can edit, delete, and display a list of all configured targets. If you are finished adding targets select `Done Managing Targets` to continue.
 
-After configuring a target, you are returned to the `Manage Targets` menu. From there you can edit, delete, and display a list of all configured targets. If you are finished adding targets select `Done Managing Targets` to continue.
+      [Continue to "Autcompile scss"](/scss.html)
+      {% endmarkdown %}
+    </div>
+    <div class="col-sm-3">
+      <br>
+      <div class="well">
+        {% markdown %}
+        ### Whats a target?
 
-[Continue to "Autcompile scss"](/scss.html)
-{% endmarkdown %}
+        A `target` is a specific theme at a specific shop.
+
+        Targets are a means of directing where quickshot sends your files.
+
+        {% endmarkdown %}
+      </div>
+    </div>
+  </div>
 </div>
