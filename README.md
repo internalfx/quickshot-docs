@@ -1,9 +1,13 @@
 # quickshot-docs
 Quickshot.io documentation
 
+## Development/Testing
+
+`bundle exec jekyll serve`
+
 ## Publishing
 
-When ready to publish run `rake site:publish`
+`rake site:publish`
 
 ###Repos
 - Main Project: https://github.com/internalfx/quickshot
