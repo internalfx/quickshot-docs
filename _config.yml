@@ -24,3 +24,5 @@ gems:
   - jemoji
   - jekyll-redirect-from
   - jekyll-sitemap
+
+host: localhost
