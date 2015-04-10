@@ -1,0 +1,20 @@
+---
+layout: default
+title: Ignore Files
+---
+
+<div class="container">
+{% markdown %}
+# {{page.title}}
+
+After executing `quickshot configure` and selecting `Configure ignore file` you will be presented with the following menu:
+
+```
+? What would you like to use as the quickshot ignore file? (Use arrow keys)
+❯ .gitignore
+  .quickshotignore
+```
+
+You may want to ignore files such as `settings_data.json` which contain data that could have been edited via Shopify's web admin panel that you don't want to overwrite using commands like `quickshot watch` (especially when working in multiple stores).
+{% endmarkdown %}
+</div>
