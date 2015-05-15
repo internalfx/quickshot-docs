@@ -1,21 +1,47 @@
 ---
 layout: default
-title: Getting started
+title: Getting Started
 ---
+
+<div class="jumbotron">
+  <div class="container">
+    {% markdown %}
+    # {{page.title}}
+
+    __TL;DR;__ `quickshot configure`
+    {% endmarkdown %}
+  </div>
+</div>
 
 <div class="container">
 {% markdown %}
-# {{page.title}}
+## Using Configuration Wizard
 
-### The configuration wizard
+The configuration wizard will guide you through creating your `quickshot.json` file. It is designed to be run multiple times, so anytime you want to change your config file, just run it again! *You do not need to make or edit this file by hand — but if you'd like to, see below.*
 
-The configuration wizard will guide you through creating your quickshot.json file. **You do not need to make or edit this file by hand!** (but you certainly can if you wish).
+> Navigate to the directory where your theme files live, or where you'd like them to be, and execute the following command:
+>
+> `quickshot configure`
 
-*Also note the configuration wizard is designed be run multiple times. If you want to change your configuration, just run it again!*
+## Manual `quickshot.json` Creation
 
-Navigate to the directory where your theme files live, or where you'd like them to be, and execute the following command:
+If you'd like to manually create the JSON file, below is an example `quickshot.json` file for your reference.
 
-`quickshot configure`
+```json
+{
+  "targets": [
+    {
+      "target_name": "live",
+      "api_key": "b33284d24bcfcce6d3f6946e573e29ef",
+      "password": "b56abe15f189302423b826bc41a3aedb",
+      "domain": "quickshot-docs",
+      "theme_name": "Quickshot Docs Theme",
+      "theme_id": 20124355
+    }
+  ],
+  "configVersion": 1
+}
+```
 
 [Continue to "Targets"](/targets.html)
 {% endmarkdown %}
