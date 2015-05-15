@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Autocompile scss
+title: Autocompile SCSS
 ---
 
 <div class="container">
@@ -8,7 +8,7 @@ title: Autocompile scss
 
 # {{page.title}}
 
-Quickshot has the ability to compile scss before uploading to Shopify. This can make your workflow easier, and keep your pages loading fast by only needing to include one css file in `theme.liquid`.
+Quickshot has the ability to compile SCSS before uploading to Shopify. This can make your workflow easier, and keep your pages loading fast by only needing to include one css file in `theme.liquid`.
 
 Execute `quickshot configure` and select `Configure scss` from the main menu.
 
@@ -20,13 +20,13 @@ Execute `quickshot configure` and select `Configure scss` from the main menu.
   Save configuration and exit
 ```
 
-You will then be asked if you want to enable sass compilation.
+You will then be asked if you want to enable SCSS compilation.
 
 ```
-? Would you like to enable automatic compiling for scss files? (Y/n)
+? Would you like to enable automatic compiling for scss files? (y/N)
 ```
 
-Press `y`. Then you will be asked what file to use for your primary scss file. If unsure accept the default.
+Press `y`. Then you will be asked what file to use for your primary SCSS file. If unsure accept the default.
 
 ```
 You have enabled scss compiling.
@@ -36,15 +36,15 @@ The file will be created for you if it does not exist.
 You will want to put all your @import calls in that file.
 Then in your theme.liquid you will only need to include the compiled css file.
 
-See docs at https://github.com/internalfx/quickshot#autocompiling-scss for more information.
+See docs at {{site.url}}{{page.url}} for more information.
 ? Enter relative path to primary scss file. (assets/application.scss)
 ```
 
-### General Scss Usage
+### General SCSS Usage
 
 **These instructions assume the default settings were used**
 
-For this example lets assume you have 3 css files in your project.
+For this example lets assume you have 3 CSS files in your project.
 
 ```
 main.css
@@ -54,7 +54,7 @@ typography.css
 
 After running the `quickshot configure` we now have
 
-```
+```scss
 application.scss
 main.css
 navigation.css
@@ -63,7 +63,7 @@ typography.css
 
 Rename all your css files to have a `.scss` extension
 
-```
+```scss
 application.scss
 main.scss
 navigation.scss
@@ -83,14 +83,15 @@ When compiled this will create one `application.css` file containing all your me
 ```html
 <!doctype html>
 <head>
-    <!-- application.css is recompiled and uploaded anytime you change ANY .scss file in your project. -->
-    {{ 'application.css' | asset_url | stylesheet_tag }}
+  <!-- application.css is recompiled and uploaded anytime you change ANY .scss file in your project. -->
+  {% raw %}{{ 'application.css' | asset_url | stylesheet_tag }}{% endraw %}
 
-    {{content_for_header}}
-
+  {% raw %}{{content_for_header}}{% endraw %}
 </head>
 ```
 
-After that you can use all the benefits of scss! For more information on what you can do check out the [Sass documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE)
+After that you can use all the benefits of SCSS! For more information on what you can do check out the [Sass documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE)
+
+[Continue to "Ignore Files"](/ignore-files.html)
 {% endmarkdown %}
 </div>
