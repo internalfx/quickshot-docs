@@ -3,13 +3,18 @@ layout: default
 title: Autocompile SCSS
 ---
 
+<div class="jumbotron">
+  <div class="container">
+    {% markdown %}
+    # {{page.title}}
+
+    Quickshot has the ability to compile SCSS before uploading to Shopify. This can make your workflow easier, and keep your pages loading fast by only needing to include one css file in `theme.liquid`.
+    {% endmarkdown %}
+  </div>
+</div>
+
 <div class="container">
 {% markdown %}
-
-# {{page.title}}
-
-Quickshot has the ability to compile SCSS before uploading to Shopify. This can make your workflow easier, and keep your pages loading fast by only needing to include one css file in `theme.liquid`.
-
 Execute `quickshot configure` and select `Configure scss` from the main menu.
 
 ```
