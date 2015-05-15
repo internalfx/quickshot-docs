@@ -2,12 +2,21 @@
 layout: default
 title: Targets
 ---
+
+<div class="jumbotron">
+  <div class="container">
+    {% markdown %}
+    # {{page.title}}
+
+    Targets are a means of directing where quickshot sends your files.
+    {% endmarkdown %}
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col-sm-9">
       {% markdown %}
-      # {{page.title}}
-
       After executing `quickshot configure` you will be presented with the following menu:
 
       ```
@@ -17,6 +26,17 @@ title: Targets
         Configure ignore file
         Save configuration and exit
       ```
+
+      Here's a breif explaination of each option:
+
+      - **Configure targets** - *Create a new target to control*
+      - **Configure scss** - *Define if you'd like to auto compile SCSS*
+      - **Configure ignore file** - *Indicate if/what ignore file you'd like to use*
+      - **Save configuration and exit** - *Exactly as it sounds*
+
+      ___
+
+      ### Configure Targets
 
       To configure your targets select "Configure targets" using your arrow keys and press enter. You will then see the following menu.
 
@@ -29,25 +49,42 @@ title: Targets
         Done Managing Targets
       ```
 
-      Select `Create Target` from the menu using the arrow keys.
+      #### Create Target
 
+      Select `Create Target` from the menu using the arrow keys.
       You will then be asked for all of the following information:
 
-      - **Target Name** *Staging, Development or whatever you wish*
-      - **API Key** *Copied from the private app settings page on Shopify*
-      - **Password** *Copied from the private app settings page on Shopify*
-      - **Store URL** *URL to the shopify store you want to connect to*
-      - **Theme** *quickshot will display all the available themes from your shop, use your arrow keys to select which one you want to connect to*
+      - **Target Name** - *Staging, Development or whatever you wish*
+      - **API Key** - *Copied from the Private Apps Settings page in Shopify*
+      - **Password** - *Copied from the Private Apps Settings page in Shopify*
+      - **Store URL** - *URL to the Shopify store you want to connect to (quickshot only needs the subdomain)*
+      - **Theme** - *Quickshot will display all the available themes from your shop, use your arrow keys to select which one you want to connect to*
 
-      #### Getting Private App Credentials
-
-      Go to **your-store.myshopify.com**/admin/apps/private in your web browser. Click on “Create a Private App” to generate the credentials for a new app. You will need the API Key and Password of this newly generated app:
-
-      ![api-key-and-password](images/API-key-and-password.jpg)
-
-      *Special Thanks to Shopify for letting me use some of their documentation*
+      > #### Private Apps Settings?
+      >
+      > If you're wondering what those are, go to **your-store.myshopify.com**/admin/apps/private in your web browser. Click on “Create a Private App” to generate the credentials for a new app. Quickshot, will need the **API Key** and **Password** of this newly generated app:
+      >
+      > ![api-key-and-password](images/API-key-and-password.jpg)
+      >
+      > *Special Thanks to Shopify for letting me use some of their documentation*
 
       After configuring a target, you are returned to the `Manage Targets` menu. From there you can edit, delete, and display a list of all configured targets. If you are finished adding targets select `Done Managing Targets` to continue.
+
+      #### Edit Target
+
+      Select `Edit Target` if you'd like to edit an existing Quickshot target.
+
+      #### Delete Target
+
+      Select `Delete Target` if you need to remove a target from the Quickshot Configuration.
+
+      #### List Targets
+
+      Select `List Targets` to display all of the exisiting targets configured for Quickshot.
+
+      #### Done Managing Targets
+
+      Select `Done Managing Targets` if you'd like to return to the main Quickshot Menu.
 
       [Continue to "Autcompile SCSS"](/scss.html)
       {% endmarkdown %}
