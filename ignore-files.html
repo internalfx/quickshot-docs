@@ -3,9 +3,19 @@ layout: default
 title: Ignore Files
 ---
 
+<div class="jumbotron">
+  <div class="container">
+    {% markdown %}
+    # {{page.title}}
+
+    A Shopify theme development tool.
+    {% endmarkdown %}
+  </div>
+</div>
+
+
 <div class="container">
 {% markdown %}
-# {{page.title}}
 
 After executing `quickshot configure` and selecting `Configure ignore file` you will be presented with the following menu:
 
@@ -16,5 +26,8 @@ After executing `quickshot configure` and selecting `Configure ignore file` you 
 ```
 
 You may want to ignore files such as `settings_data.json` which contain data that could have been edited via Shopify's web admin panel that you don't want to overwrite using commands like `quickshot watch` (especially when working in multiple stores).
+
+[Continue to "Commands"](/commands.html)
+
 {% endmarkdown %}
 </div>

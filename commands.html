@@ -3,6 +3,16 @@ layout: default
 title: Quickshot Commands
 ---
 
+<div class="jumbotron">
+  <div class="container">
+    {% markdown %}
+    # {{page.title}}
+
+    All the things you *thought* you knew.
+    {% endmarkdown %}
+  </div>
+</div>
+
 <div class="container">
 {% markdown %}
 
@@ -11,11 +21,14 @@ title: Quickshot Commands
 Executing `quickshot help` at any time will provide an overview of the available commands:
 
 ```
-  quickshot configure              Creates/Updates the configuration file in current directory
-  quickshot download [filter]      Download theme files, optionally providing a filter
-  quickshot upload [filter]        Upload theme files, optionally providing a filter
-  quickshot watch                  Watch project folder and synchronize changes automatically
-  quickshot --help                 Show this screen.
+  quickshot configure                     Creates/Updates the configuration file in current directory
+  quickshot download [options] [filter]   Download theme files, optionally providing a filter
+  quickshot upload [options] [filter]     Upload theme files, optionally providing a filter
+  quickshot watch [options]               Watch project folder and synchronize changes automatically
+  quickshot --help                        Show this screen.
 ```
+
+[Return to "Home"](/)
+
 {% endmarkdown %}
 </div>
