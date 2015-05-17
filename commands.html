@@ -18,17 +18,88 @@ title: Quickshot Commands
 
 # {{page.title}}
 
-Executing `quickshot help` at any time will provide an overview of the available commands:
+> Quick tip: `qs` is a shortcut for `quickshot`
+
+## Quickshot
+
+Executing `quickshot` will provide an overview of the available commands:
 
 ```
+Quickshot #{VERSION}
+==============================
+
+Commands:
   quickshot configure                     Creates/Updates the configuration file in current directory
-  quickshot download [options] [filter]   Download theme files, optionally providing a filter
-  quickshot upload [options] [filter]     Upload theme files, optionally providing a filter
-  quickshot watch [options]               Watch project folder and synchronize changes automatically
-  quickshot --help                        Show this screen.
+  quickshot pages                         Manage Shopify pages
+  quickshot products                      Manage Shopify products
+  quickshot theme                         Manage Shopify themes
+  quickshot                               Show this screen.
+```
+
+***
+
+## Quickshot pages
+
+Executing `quickshot pages` will provide an overview of the available commands:
+
+```
+Quickshot pages #{VERSION}
+==============================
+
+Commands:
+  quickshot pages upload [options] [filter]     Upload pages files, optionally providing a filter
+  quickshot pages download [options] [filter]   Download pages files, optionally providing a filter
+  quickshot pages watch [options]               Watch pages folder and synchronize changes automatically
+  quickshot pages                               Show this screen.
+
+
+Options:
+  --target=[targetname]                         Explicitly select target for upload/download/watch
+```
+
+***
+
+## Quickshot products
+
+Executing `quickshot products` will provide an overview of the available commands:
+
+```
+Quickshot products #{VERSION}
+==============================
+
+Commands:
+  quickshot products upload [options]              Upload products
+  quickshot products download [options]            Download products
+  quickshot products                               Show this screen.
+
+
+Options:
+  --target=[targetname]                         Explicitly select target for upload/download
+```
+
+***
+
+## Quickshot theme
+
+Executing `quickshot theme` will provide an overview of the available commands:
+
+```
+Quickshot theme #{VERSION}
+==============================
+
+Commands:
+  quickshot theme upload [options] [filter]     Upload theme files, optionally providing a filter
+  quickshot theme download [options] [filter]   Download theme files, optionally providing a filter
+  quickshot theme watch [options]               Watch theme folder and synchronize changes automatically
+  quickshot theme                               Show this screen.
+
+
+Options:
+  --target=[targetname]                         Explicitly select target for upload/download/watch
 ```
 
 [Return to "Home"](/)
 
 {% endmarkdown %}
 </div>
+<br/><br/>
