@@ -13,25 +13,53 @@ layout: default
 </div>
 
 <div class="container">
-  {% markdown %}
-  [![Join the chat at https://gitter.im/internalfx/quickshot](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/internalfx/quickshot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+  <div class="row">
+    <div class="col-sm-8">
+      {% markdown %}
+      [![Join the chat at https://gitter.im/internalfx/quickshot](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/internalfx/quickshot?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-  [![NPM](https://nodei.co/npm/quickshot.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/quickshot)
+      [![NPM](https://nodei.co/npm/quickshot.png?downloads=true&downloadRank=true&stars=true)](https://npmjs.org/package/quickshot)
 
-  ## Features
+      ## Features
 
-  - Supports uploading to multiple Shopify stores and themes
-  - Easy to use configuration wizard
-  - Uploads/downloads in parallel greatly reducing transfer times
-  - Supports auto compiling SCSS locally before uploading to Shopify
-  - Can use with `.gitignore` files or a custom `.quickshotignore` file.
-  - Can `download/upload/watch` any Shopify Page. Allowing you to edit your pages locally in your favorite editor.
-  - Supports optional `--target=[target_name]` argument
+      - Supports uploading to multiple Shopify stores and themes
+      - Easy to use configuration wizard
+      - Uploads/downloads in parallel greatly reducing transfer times
+      - Supports autocompiling scss locally before uploading to Shopify
+      - Can use with `.gitignore` files or a custom `.quickshotignore` file.
+      - Can `download/upload/watch` any Shopify Page. Allowing you to edit your pages locally in your favorite editor.
+      - Can `download/upload` Shopify Products. Easily transfer products between stores! Even the images and metafields!
 
-  ### Special Thanks
+      {% endmarkdown %}
+    </div>
+    <div class="col-sm-4">
+      <div class="well" style="padding-top: 0;">
+        {% markdown %}
+          ## Project Sponsors
 
-  Project development sponsored by [Arthur Andrew Medical](http://www.arthurandrew.com/)
-  `quickshot.io` domain donated by [Winston Hughes](https://winston.me/) ([hughker](https://github.com/hughker))
+          ***
 
-  {% endmarkdown %}
+          #### [CopyCat](https://apps.shopify.com/copycat)
+
+          Have you ever felt limited by Shopify only having one place to put all your content? Add multiple sections of content to Articles, Blogs, Pages and Products. And edit them as Rich Text or Markdown.
+
+          ***
+
+          #### [Arthur Andrew Medical](http://www.arthurandrew.com/)
+
+          Arthur Andrew Medical manufactures products with ingredients that have extensive clinical research for safety and efficacy. We specialize in Enzymes, Probiotics and Antioxidants.
+
+          ***
+
+          #### [Winston Hughes](https://winston.me/) ([hughker](https://github.com/hughker))
+
+          For donating the `quickshot.io` domain.
+
+          ***
+
+
+        {% endmarkdown %}
+      </div>
+    </div>
+  </div>
 </div>
