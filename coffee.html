@@ -1,0 +1,42 @@
+---
+layout: default
+title: Autocompile CoffeeScript
+---
+
+<div class="jumbotron">
+  <div class="container">
+    {% markdown %}
+    # {{page.title}}
+
+    Quickshot has the ability to compile CoffeeScript before uploading to Shopify.
+    {% endmarkdown %}
+  </div>
+</div>
+
+<div class="container">
+{% markdown %}
+Execute `quickshot configure` and select `Configure CoffeeScript` from the main menu.
+
+```
+? Main Menu:
+  Configure targets
+  Configure scss
+❯ Configure CoffeeScript
+  Configure ignore file
+  Save configuration and exit
+```
+
+You will then be asked if you want to enable CoffeeScript compilation.
+
+```
+? Would you like to enable automatic compiling for CoffeeScript files? (Y/n)
+```
+
+Press `Y` and you will be returned to the main menu.
+
+After that you can use all the benefits of CoffeeScript! For more information on what you can do check out the [CoffeeScript documentation](http://coffeescript.org/)
+
+[Continue to "Ignore Files"](/ignore-files.html)
+{% endmarkdown %}
+</div>
+<br/><br/>
