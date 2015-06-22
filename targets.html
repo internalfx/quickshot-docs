@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Targets</title>
+  <meta name="description" content="A Shopify theme development tool.">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/application.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  <link rel="canonical" href="http://quickshot.io/targets.html">
+  <link rel="alternate" type="application/rss+xml" title="Quickshot" href="http://quickshot.io/feed.xml" />
+</head>
+
+
+  <body>
+
+    
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Quickshot</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li ><a href="installation.html">Installation</a></li>
+        <li ><a href="getting-started.html">Getting Started</a></li>
+        <li class="active"><a href="targets.html">Targets</a></li>
+        <li ><a href="scss.html">SCSS</a></li>
+        <li ><a href="coffee.html">CoffeeScript</a></li>
+        <li ><a href="ignore-files.html">Ignore Files</a></li>
+        <li ><a href="commands.html">Commands</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="//github.com/internalfx/quickshot">Github Repo</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+    <div class="jumbotron">
+  <div class="container">
+    
+<h1 id="targets">Targets</h1>
+
+<p>Targets are a means of directing where quickshot sends your files.</p>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      
+<p>After executing <code>quickshot configure</code> you will be presented with the following menu:</p>
+
+<pre><code>? Main Menu: (Use arrow keys)
+❯ Configure targets
+  Configure scss
+  Configure CoffeeScript
+  Configure ignore file
+  Save configuration and exit
+</code></pre>
+
+<p>Here’s a breif explaination of each option:</p>
+
+<ul>
+  <li><strong>Configure targets</strong> - <em>Create a new target to control</em></li>
+  <li><strong>Configure scss</strong> - <em>Define if you’d like to auto compile SCSS</em></li>
+  <li><strong>Configure ignore file</strong> - <em>Indicate if/what ignore file you’d like to use</em></li>
+  <li><strong>Save configuration and exit</strong> - <em>Exactly as it sounds</em></li>
+</ul>
+
+<hr />
+
+<h3 id="configure-targets">Configure Targets</h3>
+
+<p>To configure your targets select “Configure targets” using your arrow keys and press enter. You will then see the following menu.</p>
+
+<pre><code>? Manage Targets: (Use arrow keys)
+❯ Create Target
+  Edit Target
+  Delete Target
+  List Targets
+  Done Managing Targets
+</code></pre>
+
+<h4 id="create-target">Create Target</h4>
+
+<p>Select <code>Create Target</code> from the menu using the arrow keys.<br />
+You will then be asked for all of the following information:</p>
+
+<ul>
+  <li><strong>Target Name</strong> - <em>Staging, Development or whatever you wish</em></li>
+  <li><strong>API Key</strong> - <em>Copied from the Private Apps Settings page in Shopify</em></li>
+  <li><strong>Password</strong> - <em>Copied from the Private Apps Settings page in Shopify</em></li>
+  <li><strong>Store URL</strong> - <em>URL to the Shopify store you want to connect to (quickshot only needs the subdomain)</em></li>
+  <li><strong>Theme</strong> - <em>Quickshot will display all the available themes from your shop, use your arrow keys to select which one you want to connect to</em></li>
+</ul>
+
+<blockquote>
+  <h4 id="private-apps-settings">Private Apps Settings?</h4>
+
+  <p>If you’re wondering what those are, go to <strong>your-store.myshopify.com</strong>/admin/apps/private in your web browser. Click on “Create a Private App” to generate the credentials for a new app. Quickshot, will need the <strong>API Key</strong> and <strong>Password</strong> of this newly generated app:</p>
+
+  <p><img src="images/API-key-and-password.jpg" alt="api-key-and-password" /></p>
+
+  <p><em>Special Thanks to Shopify for letting me use some of their documentation</em></p>
+</blockquote>
+
+<p>After configuring a target, you are returned to the <code>Manage Targets</code> menu. From there you can edit, delete, and display a list of all configured targets. If you are finished adding targets select <code>Done Managing Targets</code> to continue.</p>
+
+<h4 id="edit-target">Edit Target</h4>
+
+<p>Select <code>Edit Target</code> if you’d like to edit an existing Quickshot target.</p>
+
+<h4 id="delete-target">Delete Target</h4>
+
+<p>Select <code>Delete Target</code> if you need to remove a target from the Quickshot Configuration.</p>
+
+<h4 id="list-targets">List Targets</h4>
+
+<p>Select <code>List Targets</code> to display all of the exisiting targets configured for Quickshot.</p>
+
+<h4 id="done-managing-targets">Done Managing Targets</h4>
+
+<p>Select <code>Done Managing Targets</code> if you’d like to return to the main Quickshot Menu.</p>
+
+<p><a href="/scss.html">Continue to “SCSS”</a></p>
+
+    </div>
+    <div class="col-sm-3">
+      <br>
+      <div class="well">
+        
+<h3 id="whats-a-target">Whats a target?</h3>
+
+<p>A <code>target</code> is a specific theme at a specific shop.</p>
+
+<p>Targets are a means of directing where quickshot sends your files.</p>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<br/><br/>
+
+
+    <footer>
+
+</footer>
+
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-41961600-3', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+  </body>
+
+</html>
